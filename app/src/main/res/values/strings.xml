@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tip-waiter</string>
+    <string name="the_tip_percenrage">Amazing (20%)</string>
+    <string name="good_18">Good (18%)</string>
+    <string name="tip_amount">Tip Amount: %s</string>
+    <string name="how_was_the_service">How was the service?</string>
+    <string name="cost_of_service">Cost of Service</string>
+    <string name="the_service_is_bad_0_tip">The Service is Bad (0 Tip)</string>
+</resources>
