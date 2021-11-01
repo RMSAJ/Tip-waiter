@@ -5,10 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent">
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context=".MainActivity">
@@ -55,33 +53,34 @@
         app:layout_constraintTop_toBottomOf="@id/Calculate_Button"
         tools:text = "Tip Amount: SAR10"
         />
-    
-    <RadioGroup
-        android:id="@+id/tip_options"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/Service_Question"
-        app:layout_constraintStart_toStartOf="parent"
-        android:checkedButton="@id/Amazing_Button">
 
-        <RadioButton
-            android:id="@+id/Amazing_Button"
+        <RadioGroup
+            android:id="@+id/tip_options"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/the_tip_percenrage"/>
-        <RadioButton
-            android:id="@+id/Good_Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/good_18"/>
+            android:checkedButton="@id/Amazing_Button"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Service_Question">
 
-        <RadioButton
-            android:id="@+id/bad_Service"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/the_service_is_bad_0_tip" />
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/Amazing_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/the_tip_percenrage" />
+
+            <RadioButton
+                android:id="@+id/Good_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/good_18" />
+
+            <RadioButton
+                android:id="@+id/bad_Service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/the_service_is_bad_0_tip" />
+        </RadioGroup>
 
         <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/round_up_switch"
@@ -119,15 +118,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_diamond_24"
-        tools:ignore="VectorDrawableCompat" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/tip_options"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_diamond_24"
+            tools:ignore="VectorDrawableCompat" />
 
     <ImageView
         android:id="@+id/imageView5"
